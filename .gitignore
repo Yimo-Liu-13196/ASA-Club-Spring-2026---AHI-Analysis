@@ -1,0 +1,8 @@
+# Outputs — generated artifacts, not tracked
+# NOTE: always add a .gitkeep when creating a new subfolder under Outputs/ so the folder structure is preserved
+Outputs/**
+!Outputs/**/
+!Outputs/**/.gitkeep
+
+# Excel temp files
+~$*
