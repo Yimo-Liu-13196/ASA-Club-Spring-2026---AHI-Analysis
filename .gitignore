@@ -6,3 +6,6 @@ Outputs/**
 
 # Excel temp files
 ~$*
+
+# Claude Code instructions (private)
+CLAUDE.md
