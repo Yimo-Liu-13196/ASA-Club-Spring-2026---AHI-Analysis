@@ -9,3 +9,5 @@ Outputs/**
 
 # Claude Code instructions (private)
 CLAUDE.md
+
+.venv/
