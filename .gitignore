@@ -11,3 +11,6 @@ Outputs/**
 CLAUDE.md
 
 .venv/
+
+# Reference data dictionary (copy-pasted from website, not source data)
+Data/ahi_data_dictionary.md
