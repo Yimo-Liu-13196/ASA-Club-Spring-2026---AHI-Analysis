@@ -1,0 +1,45 @@
+# Assisted Housing Inventory - Alachua County Analysis
+
+A data analysis project by the ASA UF Statistics Club (listed at [stat.ufl.edu/academics/clubs](https://stat.ufl.edu/academics/clubs/)). We analyze the [Florida Assisted Housing Inventory (AHI)](http://flhousingdata.shimberg.ufl.edu/assisted-housing-inventory/results?nid=100) for Alachua County, FL. The AHI tracks government-assisted rental properties - developments that receive grants, loans, or subsidies either to the owner or directly to tenants.
+
+## Project Scope
+
+The project runs in two stages:
+
+**Stage 1 - Data Cleaning and Exploratory Analysis** (March 2026 - presented April 22, 2026): Ingest and clean the raw AHI data, then explore patterns across funders, properties, assistance programs, and at-risk developments. This stage is complete.
+
+**Stage 2 - Modeling and Predictive Statistics** (Fall 2026): Build on the EDA to develop predictive models - for example, identifying developments at risk of losing assistance or forecasting changes in the assisted housing stock.
+
+## Repository Structure
+
+```
+Data/
+  Raw Data/         Raw AHI export (Excel)
+  Cleaned Data/     One CSV per dataset, produced by 01_data_cleaning.ipynb
+  ahi_data_dictionary.md
+
+Notebooks/
+  01_data_cleaning.ipynb          Parse raw export into analysis-ready CSVs
+  02_eda_funder.ipynb             Funder-level aggregates (properties, units, assistance rates)
+  03_eda_inventory.ipynb          Property-level detail (funding coverage, who is served, rents)
+  04_eda_assistance_program.ipynb Assistance program breakdown
+  05_eda_lost_property.ipynb      Properties that have lost or are at risk of losing assistance
+  06_eda_housing_agencies.ipynb   Housing agency analysis
+  main.ipynb                      Entry point / overview
+
+Outputs/
+  df_funder/        Charts from notebook 02
+  df_inventory/     Charts from notebook 03
+  (one subfolder per dataset)
+```
+
+## Data Source
+
+Downloaded from the Shimberg Center for Housing Studies at the University of Florida:
+http://flhousingdata.shimberg.ufl.edu/assisted-housing-inventory/results?nid=100
+
+Column definitions: http://flhousingdata.shimberg.ufl.edu/AHI-user-guide#data-dictionary
+
+## Setup
+
+Notebooks use standard scientific Python libraries (pandas, matplotlib). Run `01_data_cleaning.ipynb` first to generate the cleaned CSVs before running any EDA notebooks.
