@@ -2,6 +2,8 @@
 
 A data analysis project by the ASA UF Statistics Club (listed at [stat.ufl.edu/academics/clubs](https://stat.ufl.edu/academics/clubs/)). We analyze the [Florida Assisted Housing Inventory (AHI)](http://flhousingdata.shimberg.ufl.edu/assisted-housing-inventory/results?nid=100) for Alachua County, FL. The AHI tracks government-assisted rental properties - developments that receive grants, loans, or subsidies either to the owner or directly to tenants.
 
+**Project Director:** Yimo Liu
+
 ## Project Scope
 
 The project runs in two stages:
@@ -9,6 +11,14 @@ The project runs in two stages:
 **Stage 1 - Data Cleaning and Exploratory Analysis** (March 2026 - presented April 22, 2026): Ingest and clean the raw AHI data, then explore patterns across funders, properties, assistance programs, and at-risk developments. This stage is complete.
 
 **Stage 2 - Modeling and Predictive Statistics** (Fall 2026): Build on the EDA to develop predictive models - for example, identifying developments at risk of losing assistance or forecasting changes in the assisted housing stock.
+
+## Key Findings (Stage 1)
+
+- **FHFC is the dominant funder**, covering more developments and assisted units than all other programs combined.
+- **All 5 programs achieve at least 86% assistance rates** across their portfolios.
+- **The unassisted unit gap is concentrated in just 2-3 developments**, not spread evenly across the county.
+- **Assisted housing primarily serves families**, with the 55-60% AMI income tier receiving the most support - programs are not fully reaching the very lowest income households.
+- **Rents are generally held below Fair Market Rent**, though with notable variation across developments.
 
 ## Repository Structure
 
