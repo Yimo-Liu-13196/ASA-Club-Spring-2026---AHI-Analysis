@@ -29,13 +29,12 @@ Data/
   ahi_data_dictionary.md
 
 Notebooks/
-  01_data_cleaning.ipynb          Parse raw export into analysis-ready CSVs
+  01_data_cleaning.ipynb          Start here - parse raw export into analysis-ready CSVs
   02_eda_funder.ipynb             Funder-level aggregates (properties, units, assistance rates)
   03_eda_inventory.ipynb          Property-level detail (funding coverage, who is served, rents)
   04_eda_assistance_program.ipynb Assistance program breakdown
   05_eda_lost_property.ipynb      Properties that have lost or are at risk of losing assistance
   06_eda_housing_agencies.ipynb   Housing agency analysis
-  main.ipynb                      Entry point / overview
 
 Outputs/
   df_funder/        Charts from notebook 02
@@ -52,4 +51,4 @@ Column definitions: http://flhousingdata.shimberg.ufl.edu/AHI-user-guide#data-di
 
 ## Setup
 
-Notebooks use standard scientific Python libraries (pandas, matplotlib). Run `01_data_cleaning.ipynb` first to generate the cleaned CSVs before running any EDA notebooks.
+Notebooks use standard scientific Python libraries (pandas, matplotlib). Start with `01_data_cleaning.ipynb` - it generates the cleaned CSVs that all subsequent notebooks depend on.
